@@ -1,0 +1,36 @@
+<head>
+<TITLE>Validar si la contraseña y la repeticion de la contraseña son iguales</TITLE>
+<script>
+function combrobarClave(){
+clave1=document.fl.clave1.value
+clave2=document.fl.clave2.value
+if (clave1 == "admin" && clave2=="conejo"){
+alert("Los Datos Coinciden...\n Bienvenido");
+var href="uno.html"
+window.location=href;
+}
+else{
+alert("Error las dos claves son iguales...\n intentelo nuevamente");
+var href="index.html";
+window.location=href;
+
+};
+}
+</script>
+</head>
+
+<body bgcolor="black">
+
+<h1><center><font color="orange">Validar si la contraseña y la repetición de la contraseña son iguales</h1></center></font>
+<br>
+<center><font color="blue">Escribe una supuesta contrase;a dos veces una en cada campo, y pulsa el boton. Javascript te dira si las dos son iguales</font></center>
+<br>
+<center><form action="" name="fl">
+contraseña:<input type="password" name="clave1" size="20"></center>
+<br>
+<center>Repite la contraseña:<input type="password" name="clave2" size="20"></center>
+<br>
+<center><input type="button" value="Comprobar si son iguales" onclick="combrobarClave()"></center>
+</center>
+</form>
+</body>
